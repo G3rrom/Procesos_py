@@ -10,12 +10,12 @@ def proceso_hijo_uno():
 def proceso_hijo_dos():
     print(f"Proceso hijo dos: {os.getpid()}, padre = {os.getpid()}")
     time.sleep(2)
-    print("Proceso hijo uno finalizado.")
+    print("Proceso hijo dos finalizado.")
     
 def proceso_hijo_tres():
     print(f"Proceso hijo tres: {os.getpid()}, padre = {os.getpid()}")
     time.sleep(2)
-    print("Proceso hijo uno finalizado.")
+    print("Proceso hijo tres finalizado.")
 
 def main():
     print(f"PID proceso padre: {os.getpid()}, padre = {os.getpid()}")
@@ -36,7 +36,7 @@ def main():
     p2.join()
     p3.join()
     
-    print("Procesos padres finalizados")
+    print("Procesos padre finalizados")
     
 if __name__ == "__main__":
     main()
